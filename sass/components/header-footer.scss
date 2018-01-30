@@ -10,6 +10,29 @@
     float: left;
 }
 
+// @mixin make-hero-title($background, $height, $text-align) {
+//   .hero-title {
+//     background: linear-gradient(
+//         rgba(255,255,255,0.5),
+//         rgba(255,255,255, 0.9) ),
+//         url($background);
+//     height: $height;
+//     padding-top: 40px;
+//     margin-bottom: 15px;
+//     text-align: $text-align;
+//     background-size: cover;
+//     background-position: 50% 50%;
+//     background-repeat: no-repeat;
+//
+//     h1 {
+//       font-weight: bold;
+//     }
+//   }
+// }
+//
+//
+// @include make-hero-title('../img/hero.jpg', 800px, right);
+
 header {
     background-color: #574277;
     background-image: linear-gradient(
