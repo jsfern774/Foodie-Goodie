@@ -1,9 +1,6 @@
-
-'use strict';
- 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
- 
+
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -13,6 +10,3 @@ gulp.task('sass', function () {
 gulp.task('sass:watch', function () {
   gulp.watch('./sass/**/*.scss', ['sass']);
 });
-
-
-gulp.task( 'default', [ 'sass:watch' ] ); // change to 'sass' if you don't wish to execute a persistent task.
