@@ -1,4 +1,7 @@
+/* Test code. */
 
-@import "/base/variables.scss";
-
-@import "/components/header.scss";
+@each $animal in puma, sea-slug, egret, salamander, lion, tiger, bear, cheetah {
+  .#{$animal}-icon {
+    background-image: url('/images/#{$animal}.png');
+  }
+}
