@@ -1,0 +1,25 @@
+{
+  "name": "foodie-goodie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "./node_modules/.bin/gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsfern774/Foodie-Goodie.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsfern774/Foodie-Goodie/issues"
+  },
+  "homepage": "https://github.com/jsfern774/Foodie-Goodie#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "node-sass": "^4.7.2"
+  }
+}

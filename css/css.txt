@@ -1,0 +1,3 @@
+This folder only stores CSS code geenerated through SASS.
+DO NOT MODIFY CONTENTS HERE.
+
