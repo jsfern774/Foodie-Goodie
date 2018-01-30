@@ -1,38 +1,13 @@
-// *********************************
-// MOBILE/DESKTOP RESPONSE
-// *********************************
-// @media (max-width: 950px) {
-//     .mobile-nav {
-//         display: block;
-//     }
-//     .desktop-nav {
-//         display: none;
-//     }
-// }
 
 
-.wrapper {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 0px;
-    width: 100%;
-}
 
-.logo {
-    background-image: url("../img/logo.png");
-    width: 60px;
-    height: 60px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    float: left;
-}
 
-header {
+footer {
     background-color: #574277;
     background-image: linear-gradient(
         180deg,
-        rgba(7, 85,131, 0),
-        rgba(25, 4, 56, .7));
+        rgba(25, 4, 56, .7),
+        rgba(7, 85,131, 0));
     height: 100px;
     padding-top: 20px;
 
@@ -50,19 +25,4 @@ header {
       list-style: none;
     }
   }
-}
-
-a,
-a:visited {
-    font-family: 'Anton', sans-serif;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-a:hover,
-a:focus,
-a:active {
-    text-decoration: none;
-    color: #9481B0;
-    border-color: #9481B0;
 }
