@@ -1,7 +1,42 @@
-/* Test code. */
+// *********************************
+// MOBILE/DESKTOP RESPONSE
+// *********************************
+@media (max-width: 950px) {
+    .mobile-nav {
+        display: block;
+    }
+    .desktop-nav {
+        display: none;
+    }
+}
 
-@each $animal in puma, sea-slug, egret, salamander, lion, tiger, bear, cheetah {
-  .#{$animal}-icon {
-    background-image: url('/images/#{$animal}.png');
+
+.wrapper {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0px;
+    width: 100%;
+}
+
+header {
+    background-color: #1B043E;
+    background-image: linear-gradient(
+        180deg,
+        rgba(7, 85,131, 0),
+        rgba(0, 9, 14, 1));
+    height: 100px;
+    padding-top: 20px;
+
+      ul {
+      float: right;
+      margin-top: 10px;
+      padding: 0;
+      width: calc(100% - 60px);
+      text-align: right;
+
+      li {
+      display: inline-block;
+      margin-left: 25px;
+    }
   }
 }
