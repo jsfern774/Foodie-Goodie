@@ -1,6 +1,3 @@
-// **********************************************
-// HEADER STYLE
-// **********************************************
 .logo {
     background-image: url("../img/logo.png");
     width: 60px;
@@ -10,53 +7,45 @@
     float: left;
 }
 
-// @mixin make-hero-title($background, $height, $text-align) {
-//   .hero-title {
-//     background: linear-gradient(
-//         rgba(255,255,255,0.5),
-//         rgba(255,255,255, 0.9) ),
-//         url($background);
-//     height: $height;
-//     padding-top: 40px;
-//     margin-bottom: 15px;
-//     text-align: $text-align;
-//     background-size: cover;
-//     background-position: 50% 50%;
-//     background-repeat: no-repeat;
-//
-//     h1 {
-//       font-weight: bold;
-//     }
-//   }
-// }
-//
-//
-// @include make-hero-title('../img/hero.jpg', 800px, right);
 
-header {
-    background-color: #574277;
-    background-image: linear-gradient(
-        180deg,
-        rgba(7, 85,131, 0),
-        rgba(25, 4, 56, .7));
+@mixin header-footer($color) {
+    background-color: $color;
     height: 100px;
     padding-top: 20px;
 
-      ul {
-      float: right;
-      margin-top: 17px;
-      padding: 0;
-      width: calc(100% - 60px);
-      text-align: right;
+    ul {
+    float: right;
+    margin-top: 17px;
+    padding: 0;
+    width: calc(100% - 60px);
+    text-align: right;
 
-      li {
-      display: inline-block;
-      margin-left: 25px;
-      font-family: 'Anton', sans-serif;
-      list-style: none;
-    }
+    li {
+    display: inline-block;
+    margin-left: 25px;
+    font-family: 'Anton', sans-serif;
+    list-style: none;
   }
 }
+
+header { @include header-footer(#574277);}
+
+header {
+    background-image: linear-gradient(
+      180deg,
+      rgba(25, 4, 56, .7),
+      rgba(7, 85,131, 0));
+}
+
+footer { @include header-footer(#574277);}
+
+footer {
+    background-image: linear-gradient(
+      180deg,
+      rgba(7, 85,131, 0),
+      rgba(25, 4, 56, .7));
+}
+
 
 a,
 a:visited {
@@ -71,33 +60,4 @@ a:active {
     text-decoration: none;
     color: #9481B0;
     border-color: #9481B0;
-}
-
-
-// **********************************************
-// FOOTER STYLE
-// **********************************************
-footer {
-    background-color: #574277;
-    background-image: linear-gradient(
-        180deg,
-        rgba(25, 4, 56, .7),
-        rgba(7, 85,131, 0));
-    height: 100px;
-    padding-top: 20px;
-
-      ul {
-      float: right;
-      margin-top: 17px;
-      padding: 0;
-      width: calc(100% - 60px);
-      text-align: right;
-
-      li {
-      display: inline-block;
-      margin-left: 25px;
-      font-family: 'Anton', sans-serif;
-      list-style: none;
-    }
-  }
 }
