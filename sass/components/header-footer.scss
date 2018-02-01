@@ -1,0 +1,64 @@
+.logo {
+    background-image: url("../img/logo.png");
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+
+// TEST COMMENT FOR GULP PROCESS
+
+@mixin header-footer($color) {
+    background-color: $color;
+    height: 100px;
+    padding-top: 20px;
+
+    ul {
+    float: right;
+    margin-top: 17px;
+    padding: 0;
+    width: calc(100% - 60px);
+    text-align: right;
+
+    li {
+    display: inline-block;
+    margin-left: 25px;
+    font-family: 'Anton', sans-serif;
+    list-style: none;
+  }
+}
+
+header { @include header-footer(#574277);}
+
+header {
+    background-image: linear-gradient(
+      180deg,
+      rgba(25, 4, 56, .7),
+      rgba(7, 85,131, 0));
+}
+
+footer { @include header-footer(#574277);}
+
+footer {
+    background-image: linear-gradient(
+      180deg,
+      rgba(7, 85,131, 0),
+      rgba(25, 4, 56, .7));
+}
+
+
+a,
+a:visited {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: #9481B0;
+    border-color: #9481B0;
+}
