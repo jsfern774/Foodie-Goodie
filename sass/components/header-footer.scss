@@ -20,6 +20,7 @@
     padding: 0;
     width: calc(100% - 60px);
     text-align: right;
+    }
 
     li {
     display: inline-block;
@@ -38,7 +39,9 @@ header {
       rgba(7, 85,131, 0));
 }
 
-footer { @include header-footer(#574277);}
+footer { 
+    @include header-footer(#574277);
+}
 
 footer {
     background-image: linear-gradient(
