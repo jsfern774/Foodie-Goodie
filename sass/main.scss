@@ -1,0 +1,34 @@
+/* float method for blog pictures and blog abstracts.*/
+
+@mixin make-blog-pic($path) {
+	background: url($path);
+
+}
+
+@mxin make-blog-abs($title, $date) {
+	.title {
+		font-size: 30px;
+		font-weight: 700;
+
+	}
+
+	.date {
+		font-size: 22px;
+		text-align: left;
+	}
+
+}
+
+
+.blog-pic {
+	@include make-blog-pic($path);
+	background-size: cover;
+
+	float: left;
+}
+
+.blog-abstract {
+	@include make-blog-abs($title, $date);
+	float: right;
+
+}
