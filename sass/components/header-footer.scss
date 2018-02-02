@@ -12,7 +12,17 @@
     height: $height;
     padding-top: 20px;
 
+<<<<<<< HEAD
       .wrapper {
+=======
+    ul {
+    float: right;
+    margin-top: 17px;
+    padding: 0;
+    width: calc(100% - 60px);
+    text-align: right;
+    }
+>>>>>>> c581f7f1c47380e6890cae3e856a8627be8eb523
 
       ul {
       float: right;
@@ -40,7 +50,13 @@ header {
       rgba(7, 85,131, 0));
 }
 
+<<<<<<< HEAD
 footer { @include header-footer(#574277, 150px, 5px);}
+=======
+footer { 
+    @include header-footer(#574277);
+}
+>>>>>>> c581f7f1c47380e6890cae3e856a8627be8eb523
 
 footer {
     background-image: linear-gradient(
