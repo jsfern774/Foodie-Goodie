@@ -1,8 +1,19 @@
-.bloglist-component {
-	height: 100px;
-	.img-div {
-		height: 80%;
-	}
+.blogList div {
+	padding: 20px;
 }
 
+.imgHelper {
 	
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+
+.imgContainer img {
+	width: 100%;
+}
+
+.contentContainer * {
+	min-width: 800px;
+}
