@@ -7,7 +7,7 @@
   background-image: linear-gradient(
      20deg,
      rgba(100, 10, 60, 0.3),
-     rgba(100, 10, 60, 0.5)
+     rgba(100, 10, 60, 0.3)
      ),
   url('../img/mainpic.jpg');
 }
@@ -24,7 +24,7 @@
 
 .slogan { @include text-styles(40px, 80px, 0px);}
 
-.maintext { @include text-styles(70px, 0px, 250px);}
+.maintext { @include text-styles(70px, 0px, 300px);}
 
 .card-text { @include text-styles(90px, 0px, 150px);}
 
@@ -43,6 +43,7 @@
 
 .card-text {
   transition-duration: 1.5s;
+  padding-top: 100px;
 }
 
 .card:hover .card-text { @include card-text(1, translateX(0px)); }
