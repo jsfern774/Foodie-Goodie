@@ -1,0 +1,63 @@
+.hero {
+  background-image: url('./img/mainpic.jpg');
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+     20deg,
+     rgba(100, 10, 60, 0.3),
+     rgba(100, 10, 60, 0.5)
+     ),
+  url('../img/mainpic.jpg');
+}
+
+@mixin text-styles($fontSize, $paddingT, $paddingL) {
+  color: white;
+  font-size: $fontSize;
+  padding-top: $paddingT;
+  padding-left: $paddingL;
+  font-family: 'Acme', sans-serif;
+  margin-bottom: 20px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.slogan { @include text-styles(40px, 80px, 0px);}
+
+.maintext { @include text-styles(70px, 0px, 250px);}
+
+.card-text { @include text-styles(90px, 0px, 150px);}
+
+.card {
+  background: transparent;
+  border: none;
+}
+
+@mixin card-text($opacity, $transform) {
+  opacity: $opacity;
+  transform: $transform;
+  font-family: 'Acme', sans-serif;
+}
+
+.card-text { @include card-text(0, translateX(40px)); }
+
+.card-text {
+  transition-duration: 1.5s;
+}
+
+.card:hover .card-text { @include card-text(1, translateX(0px)); }
+
+@mixin card-answer-p($opacity, $transform) {
+  margin: 0;
+  opacity: $opacity;
+  transform: $transform;
+  font-family: 'Acme', sans-serif;
+}
+
+.card-answer p { @include card-answer-p(0, translateX(60px)) }
+
+.card-answer p {
+    transition: 5s;
+}
+
+.card:hover .card-answer p { @include card-answer-p(1, translateX(0px)) }
