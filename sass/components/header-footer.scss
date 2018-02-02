@@ -12,29 +12,36 @@
     height: $height;
     padding-top: 20px;
 
-  .wrapper {
-    ul {
-    float: right;
-    margin-top: 17px;
-    padding: 0;
-    width: calc(100% - 60px);
-    text-align: right;
+    .wrapper {
+        ul {
+            float: right;
+            margin-top: $margin;
+            padding: 0;
+            width: calc(65% - 60px);
+            text-align: right;
+            li {
+                display: inline-block;
+                font-family: 'Anton', sans-serif;
+                list-style: none;
+            }
+        }
     }
 
-      ul {
-      float: right;
-      margin-top: $margin;
-      padding: 0;
-      width: calc(65% - 60px);
-      text-align: right;
-
-      li {
-      display: inline-block;
-      font-family: 'Anton', sans-serif;
-      list-style: none;
-     }
+    /* Generic a tag styles messing up the blogList. Since these only apply to header & footer, sticking it in here.   */
+    a,
+    a:visited {
+        font-family: 'Anton', sans-serif;
+        text-transform: uppercase;
+        color: #ffffff;
     }
-  }
+
+    a:hover,
+    a:focus,
+    a:active {
+        text-decoration: none;
+        color: #9481B0;
+        border-color: #9481B0;
+    }
 }
 
 
@@ -75,17 +82,3 @@ footer {
 }
 
 
-a,
-a:visited {
-    font-family: 'Anton', sans-serif;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-a:hover,
-a:focus,
-a:active {
-    text-decoration: none;
-    color: #9481B0;
-    border-color: #9481B0;
-}

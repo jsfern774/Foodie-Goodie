@@ -1,7 +1,21 @@
-.blogList div {
-	padding: 20px;
+
+.blogListLink {
+	> div {
+		border-radius: 10px;
+	    border: 2px solid black;
+	    padding: 10px;
+	    margin: 20px;
+	    transition-duration: 0.5s;
+	}
 }
 
+.blogListLink:hover {
+	 > div {
+	    padding: 20px;
+		background-color:rgba(0, 0, 0, 0.3);
+
+	}
+}
 .imgHelper {
 	
     display: inline-block;
@@ -12,8 +26,10 @@
 
 .imgContainer img {
 	width: 100%;
+	border-radius: 50%;
 }
 
 .contentContainer * {
-	min-width: 800px;
+	max-width: 95%;
+
 }
