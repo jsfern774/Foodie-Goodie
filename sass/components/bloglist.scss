@@ -1,34 +1,21 @@
 
-<<<<<<< HEAD
-.blogListLink {
-	color: black;
-=======
 $primary-color: #424242; 
 
 .blogListLink {
 	color: $primary-color;
->>>>>>> amelia-design
 	> div {
 		border-radius: 10px;
 	    border: 2px solid black;
 	    padding: 10px;
 	    margin: 20px;
-<<<<<<< HEAD
-	    transition-duration: 0.5s;
-=======
 	    transition-duration: 0.4s;
->>>>>>> amelia-design
 	}
 
 	
 }
 
 .blogListLink:hover {
-<<<<<<< HEAD
-	color: black;
-=======
 	color: $primary-color;
->>>>>>> amelia-design
     text-decoration: none;
 	 > div {
 	    padding: 20px;
