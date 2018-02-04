@@ -1,0 +1,79 @@
+.logo {
+  background-image: url("../img/logo.png");
+  width: 220px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left; }
+
+header {
+  background-color: #574277;
+  height: 110px;
+  padding-top: 20px;
+  /* Generic a tag styles messing up the blogList. Since these only apply to header & footer, sticking it in here.   */ }
+  header .wrapper ul {
+    float: right;
+    margin-top: 23px;
+    padding: 0;
+    width: calc(65% - 60px);
+    text-align: right; }
+    header .wrapper ul li {
+      display: inline-block;
+      font-family: 'Anton', sans-serif;
+      list-style: none; }
+  header a,
+  header a:visited {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff; }
+  header a:hover,
+  header a:focus,
+  header a:active {
+    text-decoration: none;
+    color: #9481B0;
+    border-color: #9481B0; }
+
+header {
+  background-image: linear-gradient(180deg, rgba(25, 4, 56, 0.7), rgba(7, 85, 131, 0)); }
+
+footer {
+  background-color: #574277;
+  height: 150px;
+  padding-top: 20px;
+  /* Generic a tag styles messing up the blogList. Since these only apply to header & footer, sticking it in here.   */ }
+  footer .wrapper ul {
+    float: right;
+    margin-top: 5px;
+    padding: 0;
+    width: calc(65% - 60px);
+    text-align: right; }
+    footer .wrapper ul li {
+      display: inline-block;
+      font-family: 'Anton', sans-serif;
+      list-style: none; }
+  footer a,
+  footer a:visited {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff; }
+  footer a:hover,
+  footer a:focus,
+  footer a:active {
+    text-decoration: none;
+    color: #9481B0;
+    border-color: #9481B0; }
+
+footer {
+  background-image: linear-gradient(180deg, rgba(7, 85, 131, 0), rgba(25, 4, 56, 0.7)); }
+  footer .wrapper {
+    padding-left: 10%;
+    padding-right: 10%; }
+    footer .wrapper ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+  footer h1 {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px; }

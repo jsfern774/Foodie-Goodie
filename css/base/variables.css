@@ -1,0 +1,8 @@
+/* Define base variables.*/
+/* Header-footer background color can be customised.*/
+/* Fonts are suggested to be consistent, unless specified. */
+.blog-title {
+  font-family: 'Vollkorn', serif; }
+
+.blog-content {
+  font-family: 'Lato', sans-serif; }
