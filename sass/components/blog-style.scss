@@ -1,0 +1,24 @@
+
+$blog-back-color: #E0E0E0; 
+
+$blog-content-font: 'Lato', sans-serif;
+
+$blog-title-back-color: #8d8d8d; 
+
+.blog-content {
+	background: $blog-back-color;
+	padding: 50px;
+
+	h1 {
+		font-family: 'Vollkorn', serif;
+		font-size: 36px;
+
+	}
+
+	p {
+		font-family: $blog-content-font;
+		font-size: 18px;
+		line-space: 1.15;
+
+	}
+}

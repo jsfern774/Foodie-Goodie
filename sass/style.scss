@@ -1,20 +1,5 @@
-/* Test code. */
-
-@each $animal in puma, sea-slug, egret, salamander, lion, tiger, bear, cheetah {
-  .#{$animal}-icon {
-    background-image: url('/images/#{$animal}.png');
-  }
-}
-
-
-
-
-
-
-<footer>
-footer {
-  width: 100%;
-  height: 300px;
-  background-color: red;
-}
-</footer>
+@import "./base/base-styles.scss";
+@import "./components/header-footer.scss";
+@import "./components/bloglist.scss";
+@import "./components/hero.scss";
+@import "./components/blog-style.scss";

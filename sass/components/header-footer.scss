@@ -1,0 +1,84 @@
+.logo {
+    background-image: url("../img/logo.png");
+    width: 220px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+
+@mixin header-footer($color, $height, $margin) {
+    background-color: $color;
+    height: $height;
+    padding-top: 20px;
+
+    .wrapper {
+        ul {
+            float: right;
+            margin-top: $margin;
+            padding: 0;
+            width: calc(65% - 60px);
+            text-align: right;
+            li {
+                display: inline-block;
+                font-family: 'Anton', sans-serif;
+                list-style: none;
+            }
+        }
+    }
+
+    /* Generic a tag styles messing up the blogList. Since these only apply to header & footer, sticking it in here.   */
+    a,
+    a:visited {
+        font-family: 'Anton', sans-serif;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+        text-decoration: none;
+        color: #9481B0;
+        border-color: #9481B0;
+    }
+}
+
+
+header { @include header-footer(#574277, 110px, 23px);}
+
+header {
+    background-image: linear-gradient(
+      180deg,
+      rgba(25, 4, 56, .7),
+      rgba(7, 85,131, 0));
+}
+
+footer { @include header-footer(#574277, 150px, 5px);}
+
+footer {
+    background-image: linear-gradient(
+      180deg,
+      rgba(7, 85,131, 0),
+      rgba(25, 4, 56, .7));
+
+          .wrapper {
+          padding-left: 10%;
+          padding-right: 10%;
+
+          ul {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+    }
+}
+        h1 {
+          font-size: 18px;
+          text-align: center;
+          color:white;
+          margin-bottom: 30px;
+        }
+}
+
+
